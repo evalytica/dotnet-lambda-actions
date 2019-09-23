@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Use DotNet 2.1
+    - name: Use .NET 2.1
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.1.500
@@ -26,8 +26,8 @@ jobs:
     - name: Use AWS CLI
       uses: actions/aws/cli@master
 
-    - name: DotNet Lambda build and deploy
-      uses: evalytica/dotnet-lambda-actions/deploy@0.1.0
+    - name: .NET Lambda build and deploy
+      uses: evalytica/dotnet-lambda-actions/deploy@v0.1.0
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
