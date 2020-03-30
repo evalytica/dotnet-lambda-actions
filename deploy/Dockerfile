@@ -7,7 +7,7 @@ LABEL "com.github.actions.color"="purple"
 
 LABEL "repository"="https://github.com/evalytica/dotnet-lambda-actions"
 LABEL "homepage"="https://github.com/evalytica/dotnet-lambda-actions"
-LABEL "maintainer"="Evalytica DevOps Team <evalytica@veradigmhealth.com>"
+LABEL "maintainer"="Veradigm Life Sciences DevOps Team <evalytica-development@allscripts.com>"
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
