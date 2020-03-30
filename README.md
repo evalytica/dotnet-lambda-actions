@@ -23,9 +23,6 @@ jobs:
       with:
         dotnet-version: 2.1.500
 
-    - name: Use AWS CLI
-      uses: actions/aws/cli@master
-
     - name: .NET Lambda build and deploy
       uses: evalytica/dotnet-lambda-actions/deploy@v0.1.0
       env:
