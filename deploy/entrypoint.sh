@@ -13,5 +13,6 @@ dotnet lambda deploy-function \
   --region $AWS_REGION \
   --function-name $DOTNET_LAMBDA_FUNCTION_NAME \
   --function-handler $DOTNET_LAMBDA_FUNCTION_HANDLER \
-  --package $DOTNET_LAMBDA_PACKAGE_NAME
+  --package $DOTNET_LAMBDA_PACKAGE_NAME \
+  --msbuild-parameters "/p:PublishReadyToRun=true --self-contained false"
 exit
